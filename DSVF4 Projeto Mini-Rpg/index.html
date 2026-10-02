@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha em Turno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="battle-container">
+        <div class="sprite-area">
+           
+            <div class="sprite player-sprite">
+                <img src="imagens/ComfyUI_00355_.png" alt="Jogador" id="playerImage">
+            </div>
+            
+            <div class="sprite enemy-sprite">
+                <img src="imagens/ComfyUI_00433_.png" alt="Inimigo" id="enemyImage">
+            </div>
+        </div>
+
+        
+        <div class="status-bar player-status">
+            <span class="name" id="playerName">Herói</span>
+            <div class="health-bar">
+                <div class="health-fill" id="playerHealthFill"></div>
+            </div>
+            <span class="hp-text" id="playerHpText">HP: 100/100</span>
+        </div>
+
+       
+        <div class="status-bar enemy-status">
+            <span class="name" id="enemyName">Goblin</span>
+            <div class="health-bar">
+                <div class="health-fill" id="enemyHealthFill"></div>
+            </div>
+            <span class="hp-text" id="enemyHpText">HP: 80/80</span>
+        </div>
+
+        
+        <div id="actions-panel">
+            <button id="attackBtn" class="action-btn">⚔️ Atacar</button>
+            <button id="defendBtn" class="action-btn">🛡️ Defender</button>
+        </div>
+
+        
+        <div id="battle-log">
+            <p id="logText">A batalha começou! Escolha uma ação.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
